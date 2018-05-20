@@ -1,0 +1,24 @@
+name: breakmywork
+version: '1.0'
+summary: Break My Work RSI Prevention Software
+description: Break My Work RSI Prevention Software
+
+# Experimental: Remove after snap core is available for Ubuntu 18.04
+base: core18
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: devmode # use 'strict' once you have the right plugs and slots
+
+apps:
+    breakmywork:
+        command: desktop-launch breakmywork
+
+parts:
+    breakmywork:
+        plugin: python
+        python-version: python3
+        stage-packages:
+            - libc6
+            - python3-sip
+            - python3-pyqt5
+        after: [desktop-qt5]
