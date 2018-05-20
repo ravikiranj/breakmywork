@@ -1,0 +1,4 @@
+PyQt5==5.10.1
+SIP==4.19.8
+pyflakes==1.6.0
+pycodestyle==2.4.0
