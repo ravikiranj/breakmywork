@@ -45,7 +45,7 @@ class BreakMyWork(QWidget):
         self.move(qr.topLeft())
 
 
-if __name__ == '__main__':
+def main():
     app = QApplication(sys.argv)
     ex = BreakMyWork()
     sys.exit(app.exec_())
